@@ -18,7 +18,7 @@ pipeline {
         }
         stage("Second step") {
             steps {
-                sh 'docker exec Ubuntu \'hostname\''
+                powershell 'docker exec Ubuntu \'hostname\''
             }
         }
     }
